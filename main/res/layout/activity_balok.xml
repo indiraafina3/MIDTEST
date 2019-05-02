@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BalokActivity">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/panjangbalok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="panjang balok" />
+
+    <EditText
+        android:layout_below="@id/panjangbalok"
+        android:id="@+id/lebarbalok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="lebar balok" />
+    <EditText
+        android:layout_below="@id/lebarbalok"
+        android:id="@+id/tinggibalok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="tinggi balok" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tinggibalok"
+        android:text="Hitung balok"
+        android:id="@+id/hitungbalok"/>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitungbalok"
+        android:layout_marginLeft="180dp"
+        android:onClick="pindah"
+        android:text="0"
+        android:textSize="50sp" />
+
+</RelativeLayout>

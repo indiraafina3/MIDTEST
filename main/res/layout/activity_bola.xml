@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BolaActivity">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/jarijaribola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Jari-jari bola" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jarijaribola"
+        android:text="Hitung bola"
+        android:id="@+id/hitungbola"/>
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitungbola"
+        android:layout_marginLeft="180dp"
+        android:onClick="pindah"
+        android:text="0"
+        android:textSize="50sp" />
+</RelativeLayout>
